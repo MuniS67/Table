@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>ДОБАВЛЕНИЕ, ИЗМЕНЕНИЕ И УДАЛЕНИЕ ЭЛЕМЕНТА ИЗ ТАБЛИЦЫ</h1>
+    <form name="table">
+      <div class="name">
+        <label for="name">Name</label>
+        <input id="name" type="text" />
+      </div>
+      <div class="age">
+        <label for="age">Age</label>
+        <input id="age" type="number" />
+      </div>
+      <button type="submit">Add</button>
+    </form>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th id="studentNumber">No</th>
+            <th id="studentName">Имя студента</th>
+            <th id="studentAge">Год рождения</th>
+            <th id="studentAction">Действие</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="modal">
+      <div class="modal-content">
+        <p data-close>&times;</p>
+        <h1></h1>
+        <form name="changedTable">
+          <div class="name">
+            <label for="name1">Name</label>
+            <input id="name1" type="text" />
+          </div>
+          <div class="age">
+            <label for="age1">Age</label>
+            <input id="age1" type="number" />
+          </div>
+          <button type="submit">Add</button>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
